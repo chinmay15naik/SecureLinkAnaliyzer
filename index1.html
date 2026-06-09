@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecureLink Analyzer</title>
+<link rel="stylesheet" href="style_animated.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🔐 SecureLink Analyzer</h1>
+    <p style="text-align:center;margin-bottom:20px;font-size:15px;">
+        Smart URL Security & Reputation Checker
+    </p>
+
+    <div class="card">
+
+        <input type="text" id="name" placeholder="Enter Your Name">
+
+        <input type="email" id="email" placeholder="Enter Email Address">
+
+        <input type="text" id="url" placeholder="Paste Website URL Here">
+
+        <button id="scanBtn">🚀 Analyze URL</button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <div class="dashboard">
+
+        <div class="box">
+            <h3>Total URL Scans</h3>
+            <h2 id="totalScans">0</h2>
+        </div>
+
+    </div>
+
+    <h2>Recent Scan History</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>URL</th>
+                <th>Status</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+
+        <tbody id="historyBody"></tbody>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
